@@ -1,0 +1,286 @@
+*{
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    height: 100vh;
+    max-width: 1400px;
+    min-width: 320px;
+    margin: auto;
+}
+
+.wrapper{
+    display: grid;
+     grid-template-columns:repeat(12,1fr); 
+    grid-template-rows:repeat(12, minmax(80px, 1fr)) ;
+}
+
+header{
+    grid-column: span 13;
+    grid-row:1/2;
+    background:#4372AA;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+    
+}
+
+aside{
+    grid-column: span 13;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #26466D;
+    margin-top: 0;
+}
+
+main{
+    grid-column: span 13;
+    grid-row: 3/13;
+    text-align: center;
+}
+.branding{
+    flex-grow: 1;
+    padding: 0;
+}
+.branding h1{
+    margin:.65em;
+}
+.branding span{
+    font-weight: 200;
+}
+.avatar_bell_div{
+    flex-grow:2;
+    display: flex;
+    flex-direction:row;
+}
+.bell_icon_div{
+      flex-grow: 1;
+    text-align: left;
+    padding: 0;
+}
+.bell_icon_div svg{
+    width: 2em;
+    margin-top: 1.5em;
+   margin-right:0; 
+    fill:#fff;
+}
+
+.header_avatar_div{
+    display: flex;
+    flex-direction:row; 
+    border-left: 1px solid #26466D;
+    flex-grow: 1;
+    margin:.5em;
+    
+}
+#avatar{
+    width: 2em;
+    height: 2em;
+    margin:auto 1em;
+    border-radius:50%;
+}
+
+#name{
+    margin:auto;
+}
+aside a{
+    width: 80px;
+    text-align: center;
+}
+aside .sidebar_icon svg{
+    width: 2em;
+    fill:#A9ACB6;
+    margin-top:1.5em;
+}
+aside .sidebar_icon:hover{
+    border-bottom: 2px solid #35fc7e;
+}
+aside .sidebar_icon:hover svg{
+       fill:#fff;  
+}
+
+#main_title{
+    color: #6F7285;
+    font-weight: 400;
+    margin-left: -2.2em;
+}
+
+.search_div{
+    height:4em;
+    background:#f9f9f9;
+    border: 1px solid #F5F5F5;
+}
+#search{
+    border:1px solid #D3D3D3;
+    border-radius:.4em ;
+    padding: .5em;
+    margin-top:.8em;
+}
+
+.search_icon{
+    color:#4372AA;
+    margin-left: -2em;
+}
+
+#chartAlert{
+    width: calc(100%-4em);
+    background:#4372AA ;
+     border-radius: .5em;
+    margin:1em;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#chartAlert span{
+    font-weight: 700;
+    cursor: pointer;
+}
+/* ====================================
+Media queries
+=======================================*/
+
+@media screen and (min-width:768px){
+
+header{
+    grid-column: span 13;
+    grid-row:1/2;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+aside{
+    grid-column: 1/2;
+    grid-row: 2/13;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   
+}
+
+main{
+    grid-column: 2/13;
+    grid-row: 2/13;
+}
+    
+aside a{
+    width: 100%;
+    text-align: center;
+    margin: 1em 0;
+}
+aside .sidebar_icon svg{
+    width: 2em;
+    fill:#A9ACB6;
+    margin-top:1.5em;
+}
+aside .sidebar_icon:hover{
+    border: none;
+    border-left: 2px solid #35fc7e;
+}
+aside .sidebar_icon:hover svg{
+       fill:#fff;  
+}
+    #main_title{
+    color: #6F7285;
+    font-weight: 400;
+}
+
+.search_div{
+    height:4em;
+    background:#f9f9f9;
+}
+#search{
+    border:1px solid silver;
+    border-radius:.4em;
+    padding: .5em;
+    margin-top:.8em;
+}
+
+.search_icon{
+    color:#4372AA;
+    margin-left: -2em;
+}
+    
+ .chart_header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#main_title{
+    flex-grow: 1;
+}
+
+.search_div{
+    flex-grow: 6;
+    height:4em;
+    background:#f9f9f9;
+    border: 1px solid #F5F5F5;
+    text-align:right;
+}
+#search{
+    border:1px solid #D3D3D3;
+    border-radius:.4em ;
+    padding: .5em;
+    margin-top:.8em;
+    
+}
+
+.search_icon{
+    color:#4372AA;
+    margin-left: -2em;
+    margin-right: 2em;
+}
+    
+}
+
+/*=======================
+1024 Media query
+==========================*/
+
+@media screen and (min-width:1024px){
+    .branding{
+    flex-grow: 2;
+    padding: 0;
+}
+    .avatar_bell_div{
+    flex-grow:1;
+    display: flex;
+    flex-direction:row;
+}
+.bell_icon_div{
+    flex-grow: 1;
+    text-align:right;
+    padding: 0;
+}
+.bell_icon_div svg{
+    width: 2em;
+    margin-top: 1.5em;
+   margin-right:0; 
+    fill:#fff;
+}
+
+.header_avatar_div{
+    display: flex;
+    flex-direction:row; 
+    border-left: 1px solid #26466D;
+    flex-grow: 1;
+    margin:.5em;
+    
+}
+#avatar{
+    width: 2em;
+    height: 2em;
+    margin:auto 1em;
+    border-radius:50%;
+}
+
+#name{
+  margin:auto 0;
+    }
+}
