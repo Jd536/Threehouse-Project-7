@@ -41,6 +41,7 @@ main{
     grid-column: span 13;
     grid-row: 3/13;
     text-align: center;
+    background: #FCF9E9;	
 }
 .branding{
     flex-grow: 1;
@@ -66,7 +67,11 @@ main{
     width: 2em;
     margin-top: 1.5em;
    margin-right:0; 
+    fill:#A9ACB6;
+}
+.bell_icon_div svg:hover{
     fill:#fff;
+    cursor: pointer;
 }
 
 .header_avatar_div{
@@ -87,6 +92,7 @@ main{
 #name{
     margin:auto;
 }
+
 aside a{
     width: 80px;
     text-align: center;
@@ -141,6 +147,45 @@ aside .sidebar_icon:hover svg{
     font-weight: 700;
     cursor: pointer;
 }
+
+
+/*=======Header Alerts styling================*/
+
+
+#header_alerts{
+    background:#FCF9E9;
+    padding: .5em;
+    width: 20em;
+    font-size: .8em;
+    display: none;
+}
+#header_alerts p{
+    color:black;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: .5em;
+    border-bottom: 1px solid #D3D3D3;
+    
+}
+.green_dots{
+    width: .5em;
+    height: .5em;
+    background: #5DFC0A;
+    border-radius: 50%;
+    margin-right: .5em;
+}
+.message{
+    color: black;
+    
+}
+#header_alerts p .x{
+    color:black;
+    margin-left: auto;
+   }
+
+/*=======End of Header Alerts styling=======*/
+
 /* ====================================
 Media queries
 =======================================*/
@@ -214,6 +259,7 @@ aside .sidebar_icon:hover svg{
 }
 #main_title{
     flex-grow: 1;
+    margin-left:0;
 }
 
 .search_div{
