@@ -31,7 +31,15 @@
                             
                         </svg>
 
-                    
+                    <div id="header_alerts">
+                
+                        <P class="header_alert"><span class="green_dots"></span><span class="message">You have 6 unread messages</span><span class="x">X</span></P>
+
+                        <P class="header_alert"><span class="green_dots"></span><span class="message">You have 8 new followers</span> <span class="x">X</span></P>
+
+                        <P class="header_alert"><span class="green_dots"></span><span class="message">Your password expires in 7 days</span><span class="x">X</span></P>
+                
+                    </div>
                 </div>
             
                 <div class="header_avatar_div">
@@ -40,15 +48,7 @@
                 </div>
             </div>
             
-            <div id="header_alerts">
-                
-                <P class="header_alert"><span class="green_dots"></span><span class="message">You have 6 unread messages</span><span class="x">X</span></P>
-                
-                <P class="header_alert"><span class="green_dots"></span><span class="message">You have 8 new followers</span> <span class="x">X</span></P>
-                
-                <P class="header_alert"><span class="green_dots"></span><span class="message">Your password expires in 7 days</span><span class="x">X</span></P>
-                
-            </div>
+            
         </header>
 
         <aside>
@@ -128,21 +128,204 @@
 
         <main>
             <div class="chart_header">
-                <h2 id="main_title">Dashboard</h2>
-                <div class="search_div">
-                    <input id="search" type="text" placeholder="Search">
-                    <i class="fas fa-search search_icon"></i>
+                <div class="dashboardSearch">
+                    <h2 id="main_title">Dashboard</h2>
+                    <div class="search_div">
+                        <input id="search" type="text" placeholder="Search">
+                        <i class="fas fa-search search_icon"></i>
+                    </div>
+                </div>
+            <p id="chartAlert">This is an alert ! <span id="x">X</span></p>
+            <div class="chartNav">
+                <h3>TRAFFIC</h3>
+                <ul id="labels">
+                    <li class="label">Hourly</li>
+                    <li class="label">Daily</li>
+                    <li class="label">Weekly</li>
+                    <li class="label">Monthly</li>
+                </ul>
+            </div>
+          </div>
+            <div id="charts_div">
+                <div class="lineChart_div">
+                    <canvas id="lineChart">
+
+                    </canvas>
+                </div>
+                <div class="bar_doughnut_div">
+                  <div class="bar"><h3>Daily TRAFFIC</h3> <canvas id="barChart" ></canvas></div>
+                    <div class="doughnut"><h3>Mobile Users</h3><canvas id="doughnutChart"></canvas></div>
                 </div>
             </div>
-            <p id="chartAlert">This is an alert ! <span id="x">X</span></p>
-            <div class="charts_div">
-                <canvas>
-
-                </canvas>
+            <div class="social_stats">
+                <h3>Social Stats</h3>
+                <div id="iconContainer">
+                    <div class="social_icons">
+                        <div class="icons">
+                            <img src="icons/icon-twitter.svg">
+                        </div>
+                        <div class="incons_data">
+                            <h4>Twitter</h4>
+                            <p>10,345</p>
+                        </div>
+                    </div>
+                    <div class="social_icons">
+                        <div class="icons">
+                            <img src="icons/icon-facebook.svg">
+                        </div>    
+                        <div class="incons_data">
+                            <h4>Facebook</h4>
+                            <p>8,739</p>
+                        </div>
+                    </div>
+                    <div class="social_icons">
+                        <div class="icons">
+                            <img src="icons/icon-google-plus.svg">
+                        </div>
+                        <div class="incons_data">
+                        <h4>Google+</h4>
+                        <p>2,530</p>
+                        </div>
+                    </div>
+                </div>        
             </div>
+            <!---->=======================================================
+                                member container
+            =========================================================-->
+            <div class="members_container">
+                <div class="newMembers">
+                    <h3>New Members</h3>
+                    <div class="newMembers_wrapper">
+                        
+                        <div class="newMembersCard">
+                            <img src="images/member-1.jpg">
+                            <div>
+                                <p>Victoria Chambers</p>
+                                <a href="mailto:chambers80@example.com">chambers80@example.com</a>
+                            </div>
+                             <span class="dates"> </span>
+                        </div>
+                        
+                        <div class="newMembersCard">
+                            <img src="images/member-2.jpg">
+                            <div>
+                                <p>Dale Byrd</p>
+                                <a href="mailto:dale.byrd52@example.com">dale.byrd52@example.com</a>
+                            </div>
+                             <span class="dates"> </span>
+                        </div>
+                        
+                        <div class="newMembersCard">
+                            <img src="images/member-3.jpg">
+                            <div>
+                                <p>Dawn Wood</p>
+                                <a href="mailto:dawn.wood160@example.com">dawn.wood16@example.com</a>
+                            </div>
+                              <span class="dates"> </span>
+                        </div>
+                        
+                        <div class="newMembersCard">
+                            <img src="images/member-4.jpg">
+                            <div> 
+                                <p>Dan Oliver</p>
+                                <a href="mailto:chambers80@example.com">chambers80@example.com</a>
+                            </div>
+                              <span class="dates"> </span>
+                        </div>
+                        
+                    </div>>
+                </div>
+                
+                
+                <div class="recentActivity">
+                    
+                    <h3>Recent Activity</h3>
+                      <div>
+                        <div class=" members_activity">
+                            <img src="images/member-1.jpg">
+                            <div>
+                                <p>Victoria Chambers commented on YourApp's SEO Tips 4 hours ago</p>
+                        
+                            </div>
+                             <span > <i class="fas fa-angle-right"></i> </span>
+                        </div>
+                          
+                        <div class=" members_activity">
+                            <img src="images/member-2.jpg">
+                            <div>
+                                <p>Dale Byrd Neque porro quisquam est qui.. </p>
+  
+                            </div>
+                             <span>  <i class="fas fa-angle-right"></i></span>
+                        </div>
+                          
+                        <div class=" members_activity">
+                            <img src="images/member-3.jpg">
+                            <div>
+                                <p>Dawn Wood Lorem ipsum dolor sit amet... </p>
+                           
+                            </div>
+                              <span >  <i class="fas fa-angle-right"></i></span>
+                        </div>
+                          
+                        <div class=" members_activity">
+                            <img src="images/member-4.jpg">
+                            <div> 
+                                <p>Dan Oliver Lorem ipsum dolor sit amet 1 day..Lb . </p>
+                              
+                            </div>
+                              <span >  <i class="fas fa-angle-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <form class="forms">
+                <section class="user_message ">
+                    <h3>Message User</h3>
+                    
+                    <div id="message">
+                        <input id="search" type="text" name="username" placeholder="Search for user">
+                        <textarea rows="4" id="textmessage" placeholder="Message for User"></textarea>
+                        <input id="send" type="submit" value="Send">
+                    </div>
+                </section>
+                <section class="settings">
+                    <h3> Settings</h3>
+                        <div class="toggleButtonsContainer">
+                            <div class="togglebuttons">
+                                <label for=" sendEmail"> Send Email Notifications </label>
+                                <input id="sendEmail" class="toggle" type="checkbox">
+                             </div> 
+                            <div class="togglebuttons">
+                                <label for="setProfile"> Set Profile to Public</label>
+
+                              <input id="setProfile" class="toggle" type="checkbox" />
+                          </div>
+                      </div> 
+                    <div class="timezoneSelection">
+                        <label for="selections"></label>
+                        <select required>
+                            <option value=""disabled selected>Select Time...</option>
+                            <option value="pacific">Pacific Time Zone	<span>PST (UTC−08:00)</span></option>
+                            <option value="mountain">Mountain <span>Time Zone	MST (UTC−07:00)</span></option>
+                            <option value="central">Central Time Zone <span>CST (UTC−06:00)</span></option>
+                            <option value="eastern">Eastern Time Zone<span>EST (UTC−05:00)</span></option>
+                        </select>
+                                                
+                    </div>
+                    <div class="saveAndcancelButtons">
+                        <button id="save" class="btns" >SAVE</button>
+                        <button id="cancel" class="btns">CANCEL</button>
+                    </div>
+                </section>
+                
+            </form>
         </main> 
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="js/chart.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
