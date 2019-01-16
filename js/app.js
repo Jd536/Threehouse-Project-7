@@ -54,10 +54,29 @@ searchUser.keyup(function(){
          });
     
 });
+/*=====================================================================
+                    From Submit
+=======================================================================*/
 
-/*==============================================
+
+    $("#send").click(function(e){
+        
+        e.preventDefault();
+   if($("#searchUser").val()=='' || $("#textmessage").val()==''){
+       alert('I am sorry. Both fields should be filed');
+   } else{
+       $("#message").submit();
+       alert("Thank you. Your message has been sent!");
+   }
+   
+    });
+
+
+
+
+/*======================================================================
         save settings to local storage
-===============================================*/
+=======================================================================*/
 
 $(function() {
     var checkBox = localStorage.getItem("settingbtn");
