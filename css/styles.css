@@ -130,6 +130,7 @@ aside .sidebar_icon:hover svg{
     padding: .5em;
     margin-top:.8em;
      outline: none;  
+    color: #A9ACB6;
 }
 #search:hover, 
 #search:focus{
@@ -152,12 +153,12 @@ aside .sidebar_icon:hover svg{
     padding: 1em;
     display: flex;
     justify-content: space-between;
-    
+    box-shadow: 2px 5px 3px rgba(14, 21, 27, 0.58);
 }
 #chartAlert:hover{
     transform: scale(1.01);
+    box-shadow: 3px 5px 3px rgba(14, 21, 27, 0.48);
     transition-duration: .5s;
-    box-shadow: 3px 5px 3px rgba(14, 21, 27, 0.78);
 }
 .dashboardSearch{
     width: 96%;
@@ -189,22 +190,24 @@ h3{
     
     
 }
-.chartNav ul li{
-    color:#A9ACB6;
+.label{
+    color: whitesmoke;
     font-weight: bold;
     align-self: center;
     width: 70px;
     padding:.3em;
     border-radius:1em;
     cursor: pointer;
+    box-shadow: 2px 2px 3px rgba(14, 21, 27, 0.68);
+    
 }
 
-.chartNav ul li:hover{
+.label:hover{
     background:#35fc7e;
     color:white;
     box-shadow: 2px 2px 2px rgba(14, 21, 27, 0.78);
     transition-property: background, color, box-shadow;
-    transition-duration: 1s;   
+    transition-duration: 1s; 
 }
 
 .chart_header{
@@ -377,7 +380,6 @@ p, .dates{
 }
 .newMembers{
     width: 100%;
-    flex-grow: 1fr;
     border-top: 1px solid #A9ACB6;
 }
 .newMembersCard:last-child,
@@ -440,16 +442,18 @@ p, .dates{
 .settings{
     padding-left: 1em;
 }
-#search, 
+#searchUser, 
 #textmessage, 
 #send{
     width: 96%;
     margin: 0 auto 1em;
-        border-radius: .3em;
+    border-radius: .3em;
+    color:#A9ACB6;
 }
 #send{
     background: #4372AA;
     padding:.5em;
+    color: white;
 }
 
 .user_message{
@@ -563,9 +567,9 @@ option[value=""][disabled] {
     border-radius: .3em;
     outline: none;
 }
-/* ====================================
-Media queries
-=======================================*/
+/* =========================================================================
+                                    Media queries
+===========================================================================*/
 
 @media screen and (min-width:768px){
 
@@ -595,7 +599,7 @@ main{
     width: 96%;
     margin: 0 auto;
     display: flex;
-    flex: row;
+    flex-direction: row;
 }
 aside a{
     width: 100%;
@@ -684,7 +688,7 @@ aside .sidebar_icon:hover svg{
     
     
 }
-.chartNav ul li{
+.label{
     color:#A9ACB6;
     font-weight:400;
     align-self: center;
@@ -798,9 +802,9 @@ aside .sidebar_icon:hover svg{
     }
    
 }
-/*=======================
-1024 Media query
-==========================*/
+/*==================================================================
+                                1024 Media query
+=====================================================================*/
 
 @media screen and (min-width:1024px){
     .branding{

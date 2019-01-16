@@ -162,7 +162,7 @@
                 <div id="iconContainer">
                     <div class="social_icons">
                         <div class="icons">
-                            <img src="icons/icon-twitter.svg">
+                            <img src="icons/icon-twitter.svg" alt="twitter icon">
                         </div>
                         <div class="incons_data">
                             <h4>Twitter</h4>
@@ -171,7 +171,7 @@
                     </div>
                     <div class="social_icons">
                         <div class="icons">
-                            <img src="icons/icon-facebook.svg">
+                            <img src="icons/icon-facebook.svg" alt="facebook icon">
                         </div>    
                         <div class="incons_data">
                             <h4>Facebook</h4>
@@ -180,7 +180,7 @@
                     </div>
                     <div class="social_icons">
                         <div class="icons">
-                            <img src="icons/icon-google-plus.svg">
+                            <img src="icons/icon-google-plus.svg" alt="google plus con">
                         </div>
                         <div class="incons_data">
                         <h4>Google+</h4>
@@ -198,7 +198,7 @@
                     <div class="newMembers_wrapper">
                         
                         <div class="newMembersCard">
-                            <img src="images/member-1.jpg">
+                            <img src="images/member-1.jpg" alt="picture of Victoria Chambers">
                             <div>
                                 <p>Victoria Chambers</p>
                                 <a href="mailto:chambers80@example.com">chambers80@example.com</a>
@@ -207,7 +207,7 @@
                         </div>
                         
                         <div class="newMembersCard">
-                            <img src="images/member-2.jpg">
+                            <img src="images/member-2.jpg" alt="picture of Dale Byrd">
                             <div>
                                 <p>Dale Byrd</p>
                                 <a href="mailto:dale.byrd52@example.com">dale.byrd52@example.com</a>
@@ -216,7 +216,7 @@
                         </div>
                         
                         <div class="newMembersCard">
-                            <img src="images/member-3.jpg">
+                            <img src="images/member-3.jpg" alt="picture of Dawn Wood">
                             <div>
                                 <p>Dawn Wood</p>
                                 <a href="mailto:dawn.wood160@example.com">dawn.wood16@example.com</a>
@@ -225,7 +225,7 @@
                         </div>
                         
                         <div class="newMembersCard">
-                            <img src="images/member-4.jpg">
+                            <img src="images/member-4.jpg" alt="picture of Dan Oliver">
                             <div> 
                                 <p>Dan Oliver</p>
                                 <a href="mailto:chambers80@example.com">chambers80@example.com</a>
@@ -242,7 +242,7 @@
                     <h3>Recent Activity</h3>
                       <div>
                         <div class=" members_activity">
-                            <img src="images/member-1.jpg">
+                            <img src="images/member-1.jpg" alt="picture of Victoria Chambers">
                             <div>
                                 <p>Victoria Chambers commented on YourApp's SEO Tips 4 hours ago</p>
                         
@@ -251,7 +251,7 @@
                         </div>
                           
                         <div class=" members_activity">
-                            <img src="images/member-2.jpg">
+                                <img src="images/member-2.jpg" alt="picture of Dale Byrd">     
                             <div>
                                 <p>Dale Byrd Neque porro quisquam est qui.. </p>
   
@@ -260,7 +260,7 @@
                         </div>
                           
                         <div class=" members_activity">
-                            <img src="images/member-3.jpg">
+                           <img src="images/member-3.jpg" alt="picture of Dawn Wood">
                             <div>
                                 <p>Dawn Wood Lorem ipsum dolor sit amet... </p>
                            
@@ -269,7 +269,7 @@
                         </div>
                           
                         <div class=" members_activity">
-                            <img src="images/member-4.jpg">
+                          <img src="images/member-4.jpg" alt="picture of Dan Oliver">
                             <div> 
                                 <p>Dan Oliver Lorem ipsum dolor sit amet 1 day..Lb . </p>
                               
@@ -285,7 +285,7 @@
                     <h3>Message User</h3>
                     
                     <div id="message">
-                        <input id="search" type="text" name="username" placeholder="Search for user">
+                        <input id="searchUser" type="text" name="username" placeholder="Search for user">
                         <textarea rows="4" id="textmessage" placeholder="Message for User"></textarea>
                         <input id="send" type="submit" value="Send">
                     </div>
@@ -294,7 +294,7 @@
                     <h3> Settings</h3>
                         <div class="toggleButtonsContainer">
                             <div class="togglebuttons">
-                                <label for=" sendEmail"> Send Email Notifications </label>
+                                <label for="sendEmail"> Send Email Notifications </label>
                                 <input id="sendEmail" class="toggle" type="checkbox">
                              </div> 
                             <div class="togglebuttons">
@@ -304,13 +304,13 @@
                           </div>
                       </div> 
                     <div class="timezoneSelection">
-                        <label for="selections"></label>
-                        <select required>
-                            <option value=""disabled selected>Select Time...</option>
-                            <option value="pacific">Pacific Time Zone	<span>PST (UTC−08:00)</span></option>
-                            <option value="mountain">Mountain <span>Time Zone	MST (UTC−07:00)</span></option>
-                            <option value="central">Central Time Zone <span>CST (UTC−06:00)</span></option>
-                            <option value="eastern">Eastern Time Zone<span>EST (UTC−05:00)</span></option>
+                        <label for="timeZones"></label>
+                        <select class="selectTimeZone timeZones" id="timeZones" name="TimeZonelist" required>
+                            <option value="" disabled selected>Select Time...</option>
+                            <option value="pacific">Pacific Time Zone	<span>PST (UTC−08:00) </span> </option>
+                            <option value="mountain">Mountain <span>Time Zone	MST (UTC−07:00) </span> </option>
+                            <option value="central">Central Time Zone <span>CST (UTC−06:00) </span> </option>
+                            <option value="eastern">Eastern Time Zone <span>EST (UTC−05:00) </span> </option>
                         </select>
                                                 
                     </div>

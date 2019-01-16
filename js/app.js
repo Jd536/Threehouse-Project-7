@@ -42,3 +42,56 @@ Array.from(date).forEach(function(e){
 })
 
 
+
+
+var searchUser=$("#searchUser");
+var members = $(".newMembersCard");
+
+searchUser.keyup(function(){
+         var value = $(this).val().toLowerCase();
+         $(".newMembersCard p").filter(function(){
+              $(this).parent().parent().toggle($(this).text().toLowerCase().indexOf(value) > -1);
+         });
+    
+});
+
+/*==============================================
+        save settings to local storage
+===============================================*/
+
+$(function() {
+    var checkBox = localStorage.getItem("settingbtn");
+    if (checkBox !== null) {
+        $(".toggle").each(function(){
+            $(this).attr("checked", "checked");
+        });
+    }
+});
+
+$(".toggle").click(function() {
+    if ($(this).is(":checked")) {
+        localStorage.setItem("settingbtn", $(this).val());
+    } else {
+        localStorage.removeItem("favorite");
+    }
+});
+
+  $(".selectTimeZone").change(function(){
+        var key = $(this).attr("id");
+        var value = $(this).val();
+        localStorage.setItem(key,value);
+  });
+  var inputValue= JSON.parse(localStorage.getItem('inputValue')) || {};
+  
+
+
+ 
+  $(".timeZones").each(function(){
+      var key = $(this).attr('id');
+      if(localStorage.getItem(key)){
+          $(this).val(localStorage.getItem(key));
+      }
+  });
+
+
+
