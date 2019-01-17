@@ -2,17 +2,23 @@
 
 $(document).ready(function(){
     $(".x").click(function(e){
-   this.closest("p").remove();
+        var alert = $(this).closest("p");
+            alert.fadeOut( "slow", function() {
+            alert.remove();
+  });
     });
     
     
   $("#bell").click(function(){
-    $("#header_alerts").toggle();
-    $("#bell_green_dot").toggle();
+    $("#header_alerts").fadeToggle( "slow", "linear");
+    $("#bell_green_dot").fadeToggle();
   });
     
   $("#x").click(function(e){
-   this.closest("p").remove();
+     var alert = $(this).closest("p");
+            alert.fadeOut( "slow", function() {
+            alert.remove();
+  });
     });
 });
 
